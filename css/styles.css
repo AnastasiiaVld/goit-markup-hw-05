@@ -114,6 +114,23 @@ img {
     line-height: 1.17;
 }
 
+.header-nav-link {
+    position: relative;
+}
+
+.header-nav-link.current::after {
+content: '';
+position: absolute;
+bottom: -29px;
+left: 0;
+
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: var(--Color-accent);
+}
+
 .portfolio-active a {
     color: var(--Color-accent);
 }
@@ -167,7 +184,7 @@ img {
     padding-bottom: 200px;
 }
 
-.overlay {
+.main-heading-overlay {
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -179,8 +196,9 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
+
+
 
 .main-heading-title {
     margin-right: auto;
@@ -223,14 +241,15 @@ img {
     padding-bottom: 0;
 }
 
-.main-info-icon {
-  width: 270px;
-  height: 120px;
-  background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 100px;
-  margin-bottom: 30px;
+.main-info-cvg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .main-info-list-item-title {
@@ -288,6 +307,27 @@ background: var(--other-color)
 
 .main-about-list {
     display: flex;
+}
+
+.main-about-item {
+    position: relative;
+}
+
+.main-about-uppertitle-container {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color:rgba(47, 48, 58, 0.8);
 }
 
 .main-team-list {
@@ -362,6 +402,7 @@ background: var(--other-color)
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo {
