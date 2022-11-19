@@ -65,14 +65,6 @@ img {
     padding-bottom: 25px;
 }
 
-.portfolio-line {
-   padding-bottom: 25px;
-   border: 1px solid #ECECEC;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-}
-
 .header-container {
     display: flex;
 }
@@ -89,6 +81,10 @@ img {
 
 .header-logo:visited {
     color: var(--Main-color);
+}
+
+.header-nav-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-navigation-list-item-active:active {
@@ -154,7 +150,7 @@ background-color: var(--Color-accent);
 }
 
 .header-portfolio {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-contact-list-item > a {
@@ -165,6 +161,7 @@ background-color: var(--Color-accent);
     line-height: 1.17;
     display: flex;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail,.header-tel {
@@ -223,6 +220,9 @@ background-color: var(--Color-accent);
     cursor: pointer;
     line-height: 1.88;
     border: none;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -289,6 +289,7 @@ background: var(--other-color)
 
 .social-icon {
     fill: currentColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -388,6 +389,7 @@ background: var(--other-color)
 
 .clients-icon {
     fill: currentColor;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -458,6 +460,8 @@ background: var(--other-color)
     border-radius: 50%;
     color: var(--White-color);
     background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -474,7 +478,8 @@ background: var(--other-color)
     color: hsla(0, 0%, 100%, 0.6);
     text-decoration: none;
     margin-top: 9px;
-    
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)    
 }
 
 .address-contact:hover,
@@ -506,6 +511,7 @@ background: var(--other-color)
     letter-spacing: 0.03em;
     transition: background-color .3s ease-in-out;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-filter-list-item-btn:hover {
